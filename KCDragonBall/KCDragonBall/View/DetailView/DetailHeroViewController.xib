@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailHeroViewController" customModule="KCDragonBall" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="ora-EY-j4G" id="Ywj-OS-qzw"/>
+                <outlet property="heroImage" destination="9vG-9X-Ozd" id="bu0-PM-Wj8"/>
+                <outlet property="nameLabel" destination="iJo-17-UtZ" id="bFM-2a-AfO"/>
+                <outlet property="transformationsButton" destination="GVD-ap-aei" id="dvi-s6-004"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vG-9X-Ozd">
+                    <rect key="frame" x="0.0" y="59" width="393" height="298"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJo-17-UtZ" userLabel="nameLabel">
+                    <rect key="frame" x="16" y="385" width="361" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemYellowColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ora-EY-j4G" userLabel="descriptionLabel">
+                    <rect key="frame" x="16" y="416" width="361" height="351"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemYellowColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVD-ap-aei" userLabel="transformationsButton">
+                    <rect key="frame" x="16" y="783" width="361" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="TRANSFORMATIONS">
+                        <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                        <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapTransformationButton:" destination="-1" eventType="touchUpInside" id="Rn7-we-CEU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ora-EY-j4G" firstAttribute="top" secondItem="iJo-17-UtZ" secondAttribute="bottom" constant="32" id="3qL-k3-XPc"/>
+                <constraint firstItem="ora-EY-j4G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3uW-gF-uij"/>
+                <constraint firstItem="9vG-9X-Ozd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I60-rd-3KP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GVD-ap-aei" secondAttribute="trailing" constant="16" id="ID8-jF-QuB"/>
+                <constraint firstItem="iJo-17-UtZ" firstAttribute="top" secondItem="9vG-9X-Ozd" secondAttribute="bottom" constant="32" id="Kgt-fI-CYG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iJo-17-UtZ" secondAttribute="trailing" constant="16" id="P6l-5m-Xhp"/>
+                <constraint firstItem="GVD-ap-aei" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="PZO-sM-zKM"/>
+                <constraint firstItem="iJo-17-UtZ" firstAttribute="top" secondItem="9vG-9X-Ozd" secondAttribute="bottom" constant="20" id="VVR-ef-CR0"/>
+                <constraint firstItem="iJo-17-UtZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZaI-7N-UVF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ora-EY-j4G" secondAttribute="trailing" constant="16" id="Zdx-8E-Qsd"/>
+                <constraint firstItem="GVD-ap-aei" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cXo-lx-Tq8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9vG-9X-Ozd" secondAttribute="trailing" id="eOv-Oa-9CE"/>
+                <constraint firstItem="9vG-9X-Ozd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kdI-vW-P2E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iJo-17-UtZ" secondAttribute="trailing" constant="16" id="v7F-xR-ua1"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
